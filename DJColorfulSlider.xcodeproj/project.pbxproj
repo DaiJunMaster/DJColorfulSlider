@@ -15,6 +15,9 @@
 		FC2CF5061DB9FF390073C3A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC2CF5041DB9FF390073C3A5 /* LaunchScreen.storyboard */; };
 		FC2CF5111DB9FF390073C3A5 /* DJColorfulSliderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FC2CF5101DB9FF390073C3A5 /* DJColorfulSliderTests.m */; };
 		FC2CF51C1DB9FF390073C3A5 /* DJColorfulSliderUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FC2CF51B1DB9FF390073C3A5 /* DJColorfulSliderUITests.m */; };
+		FC2CF5301DB9FF6D0073C3A5 /* DJColorfulSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = FC2CF52B1DB9FF6D0073C3A5 /* DJColorfulSlider.m */; };
+		FC2CF5311DB9FF6D0073C3A5 /* DJColorfulSliderIndicate.m in Sources */ = {isa = PBXBuildFile; fileRef = FC2CF52D1DB9FF6D0073C3A5 /* DJColorfulSliderIndicate.m */; };
+		FC2CF5321DB9FF6D0073C3A5 /* DJGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = FC2CF52F1DB9FF6D0073C3A5 /* DJGradientView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,12 @@
 		FC2CF5171DB9FF390073C3A5 /* DJColorfulSliderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DJColorfulSliderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC2CF51B1DB9FF390073C3A5 /* DJColorfulSliderUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DJColorfulSliderUITests.m; sourceTree = "<group>"; };
 		FC2CF51D1DB9FF390073C3A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC2CF52A1DB9FF6D0073C3A5 /* DJColorfulSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DJColorfulSlider.h; sourceTree = "<group>"; };
+		FC2CF52B1DB9FF6D0073C3A5 /* DJColorfulSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DJColorfulSlider.m; sourceTree = "<group>"; };
+		FC2CF52C1DB9FF6D0073C3A5 /* DJColorfulSliderIndicate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DJColorfulSliderIndicate.h; sourceTree = "<group>"; };
+		FC2CF52D1DB9FF6D0073C3A5 /* DJColorfulSliderIndicate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DJColorfulSliderIndicate.m; sourceTree = "<group>"; };
+		FC2CF52E1DB9FF6D0073C3A5 /* DJGradientView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DJGradientView.h; sourceTree = "<group>"; };
+		FC2CF52F1DB9FF6D0073C3A5 /* DJGradientView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DJGradientView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +110,7 @@
 		FC2CF4F51DB9FF390073C3A5 /* DJColorfulSlider */ = {
 			isa = PBXGroup;
 			children = (
+				FC2CF5291DB9FF6D0073C3A5 /* DJ_ColorfulSlider */,
 				FC2CF4F91DB9FF390073C3A5 /* AppDelegate.h */,
 				FC2CF4FA1DB9FF390073C3A5 /* AppDelegate.m */,
 				FC2CF4FC1DB9FF390073C3A5 /* ViewController.h */,
@@ -138,6 +148,19 @@
 				FC2CF51D1DB9FF390073C3A5 /* Info.plist */,
 			);
 			path = DJColorfulSliderUITests;
+			sourceTree = "<group>";
+		};
+		FC2CF5291DB9FF6D0073C3A5 /* DJ_ColorfulSlider */ = {
+			isa = PBXGroup;
+			children = (
+				FC2CF52A1DB9FF6D0073C3A5 /* DJColorfulSlider.h */,
+				FC2CF52B1DB9FF6D0073C3A5 /* DJColorfulSlider.m */,
+				FC2CF52C1DB9FF6D0073C3A5 /* DJColorfulSliderIndicate.h */,
+				FC2CF52D1DB9FF6D0073C3A5 /* DJColorfulSliderIndicate.m */,
+				FC2CF52E1DB9FF6D0073C3A5 /* DJGradientView.h */,
+				FC2CF52F1DB9FF6D0073C3A5 /* DJGradientView.m */,
+			);
+			path = DJ_ColorfulSlider;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,7 +296,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC2CF5301DB9FF6D0073C3A5 /* DJColorfulSlider.m in Sources */,
 				FC2CF4FE1DB9FF390073C3A5 /* ViewController.m in Sources */,
+				FC2CF5321DB9FF6D0073C3A5 /* DJGradientView.m in Sources */,
+				FC2CF5311DB9FF6D0073C3A5 /* DJColorfulSliderIndicate.m in Sources */,
 				FC2CF4FB1DB9FF390073C3A5 /* AppDelegate.m in Sources */,
 				FC2CF4F81DB9FF390073C3A5 /* main.m in Sources */,
 			);
