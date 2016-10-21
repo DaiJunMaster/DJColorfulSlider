@@ -9,6 +9,6 @@
     slider.max = 456;
     [self.view addSubview:slider];
     [slider setUp];
-    ```
+```
     
 ![](https://raw.githubusercontent.com/DaiJunMaster/DJColorfulSlider/master/QQ20161021-1.png)
