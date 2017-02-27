@@ -7,6 +7,7 @@
 //
 
 #import "DJGradientView.h"
+#import "DJColorfulSlider.h"
 
 @interface DJGradientView ()
 
@@ -53,7 +54,7 @@
 
 - (void)drawMarksWithNumber:(NSInteger)number{
         
-    NSInteger surplus = 5;
+    NSInteger surplus = DJSliderMoreThanNum;
     _marks = surplus + number * 10 + 1;
     self.layer.cornerRadius = self.bounds.size.height / 2.f;
     self.clipsToBounds = YES;

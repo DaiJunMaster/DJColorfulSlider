@@ -119,13 +119,16 @@
 - (void)touchesMoved:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     UITouch *touch = [touches anyObject];
     CGPoint p = [touch locationInView:self];
-    if (p.x >= self.gradient.frame.origin.x + self.gradient.frame.size.height / 2.f && p.x <= self.gradient.frame.origin.x + self.gradient.bounds.size.width - self.gradient.frame.size.height / 2.f - self.gradient.perMarkWidth * 6 && self.canMove) {
+    if (p.x >= self.gradient.frame.origin.x + self.gradient.frame.size.height / 2.f && p.x <= self.gradient.frame.origin.x + self.gradient.bounds.size.width - self.gradient.frame.size.height / 2.f - self.gradient.perMarkWidth * (1 + DJSliderMoreThanNum) && self.canMove) {
         self.sliderIndicate.center = CGPointMake(p.x, self.sliderIndicate.center.y);
         CGFloat originX = self.gradient.frame.origin.x;
         CGFloat realX = p.x - originX - self.gradient.frame.size.height / 2.f;
-        CGFloat allX = self.gradient.frame.size.width - self.gradient.frame.size.height - self.gradient.perMarkWidth * 6;
+        CGFloat allX = self.gradient.frame.size.width - self.gradient.frame.size.height - self.gradient.perMarkWidth * (1 + DJSliderMoreThanNum);
         NSString *text = [NSString stringWithFormat:@"%.lf",realX * (self.max - self.min) / allX + self.min];
         [self setsliderIndicateTextColorWithText:text];
+        if (self.delegate && [self.delegate respondsToSelector:@selector(sliderDidSlidWithValue:)]) {
+            [self.delegate sliderDidSlidWithValue:realX * (self.max - self.min) / allX + self.min];
+        }
     }
 }
 
