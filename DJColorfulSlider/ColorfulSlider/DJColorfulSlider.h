@@ -22,7 +22,7 @@
 #define GradientColor2 (__bridge id)[UIColor colorWithRed:39/255.0 green:170/255.0 blue:176/255.0 alpha:1].CGColor
 #define GradientColor3 (__bridge id)[UIColor colorWithRed:251/255.0 green:151/255.0 blue:0 alpha:1].CGColor
 
-#define DJSliderMoreThanNum 5
+#define DJSliderMoreThanNum 0 //尾部多出的线段数 默认0
 
 
 @property (nonatomic, copy) NSArray *colors;//渐变颜色
